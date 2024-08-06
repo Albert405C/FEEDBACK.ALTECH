@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>ALTECH Feedback Page</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <i class="fas fa-microchip"></i>
+                ALTECH
+            </h1>
+            <div class="slogan" id="slogan">Innovate, Integrate, Elevate with ALTECH</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="feedback-title">Your Feedback Matters, Connect With Experienced Developers At Your Convenience</h2>
+
+        <div class="intro">
+            <h2>About ALTECH</h2>
+            <p><strong>ALTECH</strong> is an innovative start-up company founded by ALBERT SHUKURANI MITTO, a talented developer with a passion for creating cutting-edge technological solutions. Our mission is to develop user-friendly, efficient, and impactful projects that address real-world challenges. We value your feedback as it helps us continually improve and refine our offerings.</p>
+            
+        </div>
+
+        <div class="projects">
+            <h2>Current Projects</h2>
+            <div class="project">
+                <h3>Project GRAND: GRAND COUNTY ENGINEERING</h3>
+                <p><strong>Grand County Engineers</strong>, a leading force in the engineering sector, has partnered with ALTECH, a dynamic team of innovative software engineers, to bring this website to life. This collaboration merges Grand County's unparalleled expertise in construction with ALTECH's cutting-edge technological prowess. Together, they are creating a digital experience that embodies excellence and innovation. Dive in to explore the groundbreaking projects and visionary solutions crafted by this powerful alliance.</p>
+                <a href="https://websimengine.com/altech-feedback/projectA" target="_blank">View Project</a>
+                <button onclick="showFeedbackForm('AI-Powered Task Manager')">Provide Feedback</button>
+            </div>
+            
+            <div class="project">
+                <h3>Project: NONE</h3>
+                <p>.</p>
+                <a href="https://websimengine.com/altech-feedback/projectB" target="_blank">View Project</a>
+                <button onclick="showFeedbackForm('Eco-Friendly Smart Home Hub')">Provide Feedback</button>
+            </div>
+        </div>
+
+        <div class="aspiring-dev">
+            Are you an aspiring dev like us? Join us in making a change in the tech sector and turn dreams into reality with the best and efficient developers. Connect with us via the links below. THANK YOU.
+            
+        </div>
+
+        <div class="social-icons">
+            <a href="https://x.com/AlbertMitt0" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/albert-mitto-94bba4243/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Albert405C" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://wa.me/0748219527" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/the.roaming_.lens" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:chrismitto9@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <div class="feedback-form" id="feedbackForm">
+            <h2>Feedback for <span id="projectName"></span></h2>
+            <form id="feedback">
+                <div class="form-group">
+                    <label>How would you rate the user interface?</label>
+                    <input type="radio" name="ui" value="excellent"> Excellent
+                    <input type="radio" name="ui" value="good"> Good
+                    <input type="radio" name="ui" value="average"> Average
+                    <input type="radio" name="ui" value="poor"> Poor
+                </div>
+                <div class="form-group">
+                    <label>How was the overall performance?</label>
+                    <input type="radio" name="performance" value="very fast"> Very Fast
+                    <input type="radio" name="performance" value="fast"> Fast
+                    <input type="radio" name="performance" value="average"> Average
+                    <input type="radio" name="performance" value="slow"> Slow
+                </div>
+                <div class="form-group">
+                    <label>How easy was it to navigate the project?</label>
+                    <input type="radio" name="navigation" value="very easy"> Very Easy
+                    <input type="radio" name="navigation" value="easy"> Easy
+                    <input type="radio" name="navigation" value="moderate"> Moderate
+                    <input type="radio" name="navigation" value="difficult"> Difficult
+                </div>
+                <div class="form-group">
+                    <label>Did you encounter any bugs or issues?</label>
+                    <input type="radio" name="bugs" value="none"> None
+                    <input type="radio" name="bugs" value="minor"> Minor Issues
+                    <input type="radio" name="bugs" value="major"> Major Issues
+                </div>
+                <div class="form-group">
+                    <label>How likely are you to recommend this project to others?</label>
+                    <input type="radio" name="recommend" value="very likely"> Very Likely
+                    <input type="radio" name="recommend" value="likely"> Likely
+                    <input type="radio" name="recommend" value="unlikely"> Unlikely
+                    <input type="radio" name="recommend" value="very unlikely"> Very Unlikely
+                </div>
+                <div class="form-group">
+                    <label for="features">What additional features would you like to see?</label>
+                    <textarea id="features" name="features" rows="4" cols="50"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="improvements">Any suggestions for improvements?</label>
+                    <textarea id="improvements" name="improvements" rows="4" cols="50"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email (optional):</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <button type="submit">Submit Feedback</button>
+            </form>
+            <div class="contact-section">
+                <a href="https://wa.me/0748219527" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.instagram.com/the.roaming_.lens/" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="mailto:chrismitto9@gmail.com">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>© 2024 ALTECH. All rights reserved. | Visitors: <span id="count">30</span></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
